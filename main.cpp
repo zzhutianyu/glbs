@@ -85,6 +85,10 @@ int main() {
     cout << "Gp:" << Gp << endl;
     for (int j = 0; j < n; ++j) {
         sort(var_vec.begin(), var_vec.end());
+//        for (const auto &item : var_vec) {
+//            cout << item << " ";
+//        }
+//        cout << endl;
         auto average = cal_average(var_vec);
         auto standard = cal_standard(var_vec,average);
         auto suspicious_var = get_suspicious_var(var_vec, average);
